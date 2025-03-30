@@ -1,0 +1,5 @@
+# hack.ps
+net "example" 80
+net_send(example, "GET / HTTP/1.1\r\nHost: example.com\r\n\r\n")
+set response = net_recv(example, 1024)
+show response

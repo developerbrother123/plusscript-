@@ -1,0 +1,8 @@
+# myapp.ps
+framework "myapp" "django"
+web "home" "<h1>Welcome to MyApp</h1><style>h1 {color: green}</style>"
+sql "mysql" "{\"host\":\"localhost\",\"user\":\"root\",\"password\":\"\",\"database\":\"myapp\"}" "CREATE TABLE posts (id INT, title VARCHAR(255))"
+server 8000
++while 1 > 0
+  sleep(1)
++end

@@ -1,0 +1,10 @@
+# game_compiled.ps
+game "FastGame" 800 600
+set x = 0
++while x < 780
+  draw "player" x 500
+  set x = x + 5
+  sleep(0.01)
++end
+compile "FastGame"
+show "Game compiled to executable!"

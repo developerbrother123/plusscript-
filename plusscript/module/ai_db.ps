@@ -1,0 +1,6 @@
+# ai_db.ps
+ai "model" 20
+set data = tensor([1, 2], [3, 4])
+sql "pgsql" "{\"dbname\":\"ai\",\"user\":\"postgres\",\"password\":\"\"}" "CREATE TABLE results (id SERIAL, value REAL)"
+sql "pgsql" "{\"dbname\":\"ai\",\"user\":\"postgres\",\"password\":\"\"}" "INSERT INTO results (value) VALUES (5.5)"
+show pgsql_result

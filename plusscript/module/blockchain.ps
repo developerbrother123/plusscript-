@@ -1,0 +1,5 @@
+# blockchain.ps
+blockchain "eth" "https://mainnet.infura.io/v3/YOUR_PROJECT_ID"
+set tx = {"from": "0xYourAddress", "to": "0xRecipient", "value": 1000000}
+block_tx(eth, tx)
+show "Transaction sent"

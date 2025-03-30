@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlusScript: The Definitive Guide</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #ffffff;
+            color: #000000;
+        }
+        h1, h2, h3, h4 {
+            color: #6a0dad; /* PlusScript purple */
+            page-break-after: avoid;
+        }
+        h1 {
+            font-size: 2.5em;
+            border-bottom: 4px solid #6a0dad;
+            padding-bottom: 10px;
+        }
+        h2 {
+            font-size: 1.8em;
+            margin-top: 20px;
+        }
+        h3 {
+            font-size: 1.4em;
+        }
+        code {
+            background-color: #f0f0f0;
+            padding: 2px 5px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+        }
+        pre {
+            background-color: #1a1a1a;
+            color: #ffffff;
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+            font-family: 'Courier New', monospace;
+            page-break-inside: avoid;
+        }
+        .chapter {
+            margin-bottom: 30px;
+            page-break-before: always;
+        }
+        .chapter:first-child {
+            page-break-before: avoid;
+        }
+        .section {
+            margin-left: 20px;
+        }
+        .toc {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .toc ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .toc a {
+            color: #6a0dad;
+            text-decoration: none;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+            page-break-inside: avoid;
+        }
+        th, td {
+            border: 1px solid #000000;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #6a0dad;
+            color: #ffffff;
+        }
+        @media print {
+            body {
+                margin: 0;
+                padding: 0;
+            }
+            .chapter {
+                page-break-before: always;
+            }
+            .chapter:first-child {
+                page-break-before: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>PlusScript: The Definitive Guide</h1>
+    <p><em>A Comprehensive Handbook for the Hyper-Language</em></p>
+    <p>Version 1.0 – March 29, 2025</p>
+    <p>This book provides a complete guide to PlusScript, a modern programming language designed for simplicity and versatility. With 20 chapters, it covers everything from basic syntax to advanced applications like quantum computing.</p>
+
+    <!-- Table of Contents -->
+    <div class="toc">
+        <h2>Table of Contents</h2>
+        <ul>
+            <li><a href="#chapter1">1. Welcome to PlusScript</a></li>
+            <li><a href="#chapter2">2. Installation and Setup</a></li>
+            <li><a href="#chapter3">3. Variables and Data Types</a></li>
+            <li><a href="#chapter4">4. Operators and Expressions</a></li>
+            <li><a href="#chapter5">5. Control Structures</a></li>
+            <li><a href="#chapter6">6. Functions</a></li>
+            <li><a href="#chapter7">7. Classes and Object-Oriented Programming</a></li>
+            <li><a href="#chapter8">8. Modules and Packages</a></li>
+            <li><a href="#chapter9">9. Exception Handling</a></li>
+            <li><a href="#chapter10">10. File Operations</a></li>
+            <li><a href="#chapter11">11. Web Development with PlusScript</a></li>
+            <li><a href="#chapter12">12. Android App Development</a></li>
+            <li><a href="#chapter13">13. Desktop Application Development</a></li>
+            <li><a href="#chapter14">14. Game Development</a></li>
+            <li><a href="#chapter15">15. Artificial Intelligence and Machine Learning</a></li>
+            <li><a href="#chapter16">16. Internet of Things (IoT)</a></li>
+            <li><a href="#chapter17">17. Blockchain Programming</a></li>
+            <li><a href="#chapter18">18. Scientific Computing</a></li>
+            <li><a href="#chapter19">19. Quantum Computing with PlusScript</a></li>
+            <li><a href="#chapter20">20. Advanced Features and Community</a></li>
+        </ul>
+    </div>
+
+    <!-- Chapter 1 -->
+    <div class="chapter" id="chapter1">
+        <h2>1. Welcome to PlusScript</h2>
+        <p>PlusScript is a revolutionary <strong>Hyper-Language</strong> built to simplify programming while offering powerful tools for modern development.</p>
+        <h3>1.1 What is PlusScript?</h3>
+        <p>PlusScript combines Python’s flexibility with a unique `+`-based syntax, making it ideal for web, mobile, desktop, AI, and quantum applications.</p>
+        <h3>1.2 Why Use PlusScript?</h3>
+        <ul>
+            <li><strong>Simplicity</strong>: Intuitive syntax reduces learning time.</li>
+            <li><strong>Versatility</strong>: Build anything, from scripts to quantum programs.</li>
+            <li><strong>Integration</strong>: Leverages Python libraries seamlessly.</li>
+        </ul>
+    </div>
+
+    <!-- Chapter 2 -->
+    <div class="chapter" id="chapter2">
+        <h2>2. Installation and Setup</h2>
+        <p>Get PlusScript running:</p>
+        <ol class="section">
+            <li>Download `PlusScriptIDE.exe` or source files (`plusscript.py`, `plusscript_ide.py`).</li>
+            <li>Optional Python setup: Install Python 3.9+ and run:
+                <pre>pip install tkinter Pillow numpy psycopg2 mysql-connector-python boto3 paho-mqtt web3</pre>
+            </li>
+            <li>Launch with `PlusScriptIDE.exe` or `python plusscript_ide.py`.</li>
+            <li>Test: <pre>show "Hello, PlusScript!"</pre></li>
+        </ol>
+    </div>
+
+    <!-- Chapter 3 -->
+    <div class="chapter" id="chapter3">
+        <h2>3. Variables and Data Types</h2>
+        <p>Variables are defined with `set`:</p>
+        <pre>
+set x = 10          # Integer
+set y = 3.14        # Float
+set name = "Bob"    # String
+set nums = [1, 2, 3]  # List
+set data = {"key": "value"}  # Dictionary
+        </pre>
+        <p>Dynamic typing allows flexibility.</p>
+    </div>
+
+    <!-- Chapter 4 -->
+    <div class="chapter" id="chapter4">
+        <h2>4. Operators and Expressions</h2>
+        <p>Perform operations:</p>
+        <pre>
+set a = 5 + 2      # 7
+set b = 10 * 3     # 30
+set c = a > b      # False
+        </pre>
+        <p>Operators: `+`, `-`, `*`, `/`, `==`, `!=`, `>`, `<`, `>=`, `<=`.</p>
+    </div>
+
+    <!-- Chapter 5 -->
+    <div class="chapter" id="chapter5">
+        <h2>5. Control Structures</h2>
+        <p>Manage flow:</p>
+        <pre>
++if x > 5
+    show "Big"
++elif x == 5
+    show "Equal"
++else
+    show "Small"
++end
+
++while x > 0
+    show x
+    set x = x - 1
++end
+
++for i in range(4)
+    show i
++end
+        </pre>
+    </div>
+
+    <!-- Chapter 6 -->
+    <div class="chapter" id="chapter6">
+        <h2>6. Functions</h2>
+        <p>Define reusable code:</p>
+        <pre>
++func square n
+    return n * n
++end
+show square(3)  # 9
+        </pre>
+        <p>Supports parameters and returns.</p>
+    </div>
+
+    <!-- Chapter 7 -->
+    <div class="chapter" id="chapter7">
+        <h2>7. Classes and Object-Oriented Programming</h2>
+        <p>Create objects:</p>
+        <pre>
++class Dog
+    set age = 2
+    +method bark
+        show "Woof!"
+    +end
++end
+set d = Dog()
+d.bark()  # Woof!
+        </pre>
+    </div>
+
+    <!-- Chapter 8 -->
+    <div class="chapter" id="chapter8">
+        <h2>8. Modules and Packages</h2>
+        <p>Extend functionality:</p>
+        <pre>
++import "utils.ps"
+pkg "math" "http://example.com/math.ps"
+        </pre>
+        <p>Use `+import` for local files, `pkg` for external packages.</p>
+    </div>
+
+    <!-- Chapter 9 -->
+    <div class="chapter" id="chapter9">
+        <h2>9. Exception Handling</h2>
+        <p>Handle errors:</p>
+        <pre>
++try
+    set x = 1 / 0
++catch e
+    show "Error: " + e
++finally
+    show "Cleanup"
++end
+        </pre>
+    </div>
+
+    <!-- Chapter 10 -->
+    <div class="chapter" id="chapter10">
+        <h2>10. File Operations</h2>
+        <p>Read and write files:</p>
+        <pre>
+write "note.txt" "Hello"
+set text = read("note.txt")
+show text  # Hello
+        </pre>
+    </div>
+
+    <!-- Chapter 11 -->
+    <div class="chapter" id="chapter11">
+        <h2>11. Web Development with PlusScript</h2>
+        <p>Build a web server:</p>
+        <pre>
+server 8000
+api "info" "/info"
+set api_endpoints = {"info": "Welcome to PlusScript Web"}
+        </pre>
+        <p>Test at `http://localhost:8000/info`.</p>
+    </div>
+
+    <!-- Chapter 12 -->
+    <div class="chapter" id="chapter12">
+        <h2>12. Android App Development</h2>
+        <p>Create an Android app:</p>
+        <pre>
+android "MyApp"
+gui "screen" 300 500
+set msg = "Hello, Android!"
+show msg
+        </pre>
+        <p>Build with Python-for-Android.</p>
+    </div>
+
+    <!-- Chapter 13 -->
+    <div class="chapter" id="chapter13">
+        <h2>13. Desktop Application Development</h2>
+        <p>Develop a desktop GUI:</p>
+        <pre>
+desktop "Editor" 400 600
+gui "text" 380 580
+        </pre>
+    </div>
+
+    <!-- Chapter 14 -->
+    <div class="chapter" id="chapter14">
+        <h2>14. Game Development</h2>
+        <p>Make a game:</p>
+        <pre>
+game "Space" 800 600
+draw "ship" 400 300
+animate "ship" "move"
+        </pre>
+    </div>
+
+    <!-- Chapter 15 -->
+    <div class="chapter" id="chapter15">
+        <h2>15. Artificial Intelligence and Machine Learning</h2>
+        <p>Use AI tools:</p>
+        <pre>
+ai "net" 5
+set data = tensor(1, 2, 3)
+show data
+        </pre>
+    </div>
+
+    <!-- Chapter 16 -->
+    <div class="chapter" id="chapter16">
+        <h2>16. Internet of Things (IoT)</h2>
+        <p>Connect devices:</p>
+        <pre>
+iot "light" "mqtt://broker"
+iot_pub("light", "status", "on")
+        </pre>
+    </div>
+
+    <!-- Chapter 17 -->
+    <div class="chapter" id="chapter17">
+        <h2>17. Blockchain Programming</h2>
+        <p>Interact with blockchain:</p>
+        <pre>
+blockchain "eth" "http://node"
+set tx = {"to": "0x123", "value": 1}
+block_tx("eth", tx)
+        </pre>
+    </div>
+
+    <!-- Chapter 18 -->
+    <div class="chapter" id="chapter18">
+        <h2>18. Scientific Computing</h2>
+        <p>Solve problems:</p>
+        <pre>
+sci "eq" "x * 2 = 8"
+set x = sci_solve("eq")
+show x  # 4
+        </pre>
+    </div>
+
+    <!-- Chapter 19 -->
+    <div class="chapter" id="chapter19">
+        <h2>19. Quantum Computing with PlusScript</h2>
+        <p>Explore quantum programming:</p>
+        <pre>
+quantum "qubit" "simulate"
+set state = [0.707, 0.707]
+show state
+        </pre>
+        <p>Future support for Qiskit planned.</p>
+    </div>
+
+    <!-- Chapter 20 -->
+    <div class="chapter" id="chapter20">
+        <h2>20. Advanced Features and Community</h2>
+        <p>Master advanced techniques:</p>
+        <pre>
+macro "log" "show $msg"
+parallel "task" 4
+        </pre>
+        <p>Join our community at [TBD].</p>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,15 @@
+# game.ps
++func move obj x y
+  draw obj x y
++end
+
+game "SpaceGame" 600 400
+set player_x = 300
++while 1 > 0
+  move "player" player_x 350
+  set player_x = player_x + 1
+  +if player_x > 580
+    set player_x = 0
+  +end
+  sleep(0.02)
++end

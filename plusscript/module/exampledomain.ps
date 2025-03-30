@@ -1,0 +1,8 @@
+# exampledomain.ps
+api "data" "/api/data"
+keygen "mykey"
+set data = {"status": "success", "message": "Hello from domain"}
+domain "exampledomain.ps" 8080
++while 1 > 0
+  sleep(1)
++end

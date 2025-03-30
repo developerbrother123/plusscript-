@@ -1,0 +1,6 @@
+<mime-info xmlns="http://www.freedesktop.org/standards/shared-mime-info">
+    <mime-type type="text/plusscript">
+        <comment>PlusScript File</comment>
+        <glob pattern="*.ps"/>
+    </mime-type>
+</mime-info>

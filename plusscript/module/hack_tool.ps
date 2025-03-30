@@ -1,0 +1,5 @@
+# hack_tool.ps
+net "target" 80
+net_send(target, "GET / HTTP/1.1\r\nHost: target.com\r\n\r\n")
+set response = net_recv(target, 4096)
+show response

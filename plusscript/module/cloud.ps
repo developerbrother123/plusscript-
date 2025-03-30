@@ -1,0 +1,4 @@
+# cloud.ps
+cloud "s3" "{\"region\":\"us-east-1\",\"aws_access_key_id\":\"YOUR_KEY\",\"aws_secret_access_key\":\"YOUR_SECRET\"}"
+cloud_put(s3, "mybucket", "test.txt", "Hello from PlusScript")
+show "File uploaded to S3"

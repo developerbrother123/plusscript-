@@ -1,0 +1,11 @@
+# game_app.ps
+game "SuperGame" 800 600
+physics "player" 5 10
+set x = 0
++while x < 780
+  draw "player" x 500
+  set x = x + player.vx
+  sleep(0.02)
++end
+animate "player" "10"
+show "Game running with physics!"

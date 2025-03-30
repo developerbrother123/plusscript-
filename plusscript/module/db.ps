@@ -1,0 +1,5 @@
+# db.ps
+sql "mysql" "{'host':'localhost','user':'root','password':'','database':'test'}" "CREATE TABLE users (id INT, name VARCHAR(255))"
+sql "mysql" "{'host':'localhost','user':'root','password':'','database':'test'}" "INSERT INTO users VALUES (1, 'Alice')"
+sql "mysql" "{'host':'localhost','user':'root','password':'','database':'test'}" "SELECT * FROM users"
+show mysql_result

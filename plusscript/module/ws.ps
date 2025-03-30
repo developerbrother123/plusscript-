@@ -1,0 +1,5 @@
+# ws.ps
+ws "chat" 8080
+net_send(chat, "Hello WebSocket")
+set msg = net_recv(chat, 1024)
+show msg

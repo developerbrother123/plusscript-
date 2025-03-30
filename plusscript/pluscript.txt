@@ -1,0 +1,37 @@
+# Dictionaries
+set d = {"name": "PlusScript", "version": 1}
+show d["name"]
+
+# Classes
++class Person
+  set name = "Unknown"
+  +method greet
+    show "Hello, " + self.name
+  +end
++end
+set p = Person()
+set p.name = "Alice"
+p.greet()
+
+# Modules (in a file 'math.ps')
++func square x
+  return x * x
++end
+
+# Main file
++import "math.ps"
+set result = square(5)
+show result
+
+# Built-ins
+set lst = range(3)  # [0, 1, 2]
+show len(lst)       # 3
+
+# Exceptions
++try
+  set x = 1 / 0
++catch e
+  show "Error: " + e
++finally
+  show "Done"
++end
